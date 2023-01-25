@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8968513297E2EC700653999 /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = C8968512297E2EC700653999 /* LBTATools */; };
 		C89E6346297B03CB001A10D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89E6345297B03CB001A10D8 /* AppDelegate.swift */; };
 		C89E6348297B03CB001A10D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89E6347297B03CB001A10D8 /* SceneDelegate.swift */; };
 		C89E634A297B03CB001A10D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89E6349297B03CB001A10D8 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8968513297E2EC700653999 /* LBTATools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = CompositionalLayout;
+			packageProductDependencies = (
+				C8968512297E2EC700653999 /* LBTATools */,
+			);
 			productName = CompositionalLayout;
 			productReference = C89E6342297B03CB001A10D8 /* CompositionalLayout.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = C89E6339297B03CB001A10D8;
+			packageReferences = (
+				C8968511297E2EC700653999 /* XCRemoteSwiftPackageReference "LBTATools" */,
+			);
 			productRefGroup = C89E6343297B03CB001A10D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -602,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8968511297E2EC700653999 /* XCRemoteSwiftPackageReference "LBTATools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bhlvoong/LBTATools.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8968512297E2EC700653999 /* LBTATools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8968511297E2EC700653999 /* XCRemoteSwiftPackageReference "LBTATools" */;
+			productName = LBTATools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C89E633A297B03CB001A10D8 /* Project object */;
 }
